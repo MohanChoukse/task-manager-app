@@ -1,0 +1,18 @@
+{
+  "name": "task-manager-app",
+  "version": "1.0.0",
+  "description": "Full-stack Task Manager Web Application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && npm run dev",
+    "client": "cd frontend && npm run dev",
+    "install-all": "npm install && cd backend && npm install && cd ../frontend && npm install"
+  },
+  "keywords": ["task-manager", "react", "nodejs", "express", "sequelize"],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+} 
